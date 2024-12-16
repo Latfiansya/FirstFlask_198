@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+    <div class="about">
+        <a href="/about">About</a>
+</div>
+<body>
+    <div class="container">
+        <h1>WELCOME TO FIRST FLASK!</h1>
+        <form action="/submit" method="POST">
+            <label for="name">Masukkan Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <button type="submit">Submit</button>
+        </form>
+
+        
+        
